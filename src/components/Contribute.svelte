@@ -23,4 +23,8 @@
     .red {
         color: #ff0000;
     }
+
+    a {
+        margin: 25px;
+    }
 </style>
