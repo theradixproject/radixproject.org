@@ -1,6 +1,12 @@
+<script>
+    import Img from "./Img.svelte";
+</script>
+
 <main>
     <div class="row">
-        <img src="/gradient-circle-dark.png" alt="Radix Project gradient logo dark">
+        <div class="img">
+            <Img src="splash"/>
+        </div>
         <div class="col">
             <h1>The Radix Project</h1>
             <p class="mono">Your one-stop shop for supercharging open source.</p>
@@ -33,7 +39,7 @@
         margin-left: 25px;
     }
 
-    img {
+    .img {
         width: 175px;
     }
 

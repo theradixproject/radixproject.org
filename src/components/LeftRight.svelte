@@ -1,17 +1,21 @@
+<script>
+    import Img from "./Img.svelte";
+</script>
+
 <main>
     <div class="left">
         <div>
             <h2 class="heading-title">Your project is our priority<span class="dot">.</span></h2>
             <p class="mono">The Radix Project is committed to providing free-of-charge need-based hosting on request for your FLOSS/open source endeavors. You can apply for our base plan, or contact us for more powerful solutions.</p>
         </div>
-        <div>
-            <img src="/radix_globe_icon_dark.png" alt="">
+        <div class="img">
+            <Img src="star_icon"/>
         </div>
     </div>
 
     <div class="right">
-        <div>
-            <img src="/radix_globe_icon_dark.png" alt="">
+        <div class="img">
+            <Img src="globe_icon"/>
         </div>
         <div>
             <h2 class="heading-title">Reliable infrastructure for a dedicated community<span class="dot">.</span></h2>
@@ -24,8 +28,8 @@
             <h2 class="heading-title">Trust & safety first<span class="dot">.</span></h2>
             <p class="mono">Volunteers are legally bound to never share confidential or sensitive information with third parties, so you can rest assured that your valuable project infrastructure is in trustworthy hands. Partners, sponsors, & information are treated with respect.</p>
         </div>
-        <div>
-            <img src="/radix_globe_icon_dark.png" alt="">
+        <div class="img">
+            <Img src="globe_icon"/>
         </div>
     </div>
 </main>
@@ -45,16 +49,16 @@
         justify-content: center;
     }
 
-    img {
+    .img {
         width: 170px;
-        height: auto;
+        height: 170px;
     }
 
-    .left img {
+    .left .img {
         padding-left: 50px;
     }
 
-    .right img {
+    .right .img {
         padding-right: 50px;
     }
 </style>
