@@ -8,10 +8,10 @@
     color: #898989;
 }
 
-body, html {
+body {
     min-height: 100vh;
     margin: 0;
-    color: white;
+    color: white !important;
     background-color: black !important;
 }
 
@@ -99,6 +99,11 @@ button:focus:not(:focus-visible) {
     cursor: pointer;
 }
 
+.gradient-border.light {
+    color: black;
+    box-shadow: 2px 1000px 1px white inset;
+}
+
 .nav-link {
     margin: 0;
     height: 100%;
@@ -109,6 +114,10 @@ button:focus:not(:focus-visible) {
     letter-spacing: 0.1em;
     text-decoration: none;
     transition: color 0.1s linear;
+}
+
+.nav-link.light {
+    color: black;
 }
 
 .nav-link:hover {

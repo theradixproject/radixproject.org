@@ -1,11 +1,18 @@
 <script>
+    import {light} from "../stores.js";
+
     export let src, alt
-    let scheme = "dark"
+    export let themed = false
 </script>
 
 <picture>
-    <source type="image/avif" srcset="/{src}_{scheme}.avif">
-    <img alt={alt} src="/{src}_{scheme}.png">
+    {#if themed}
+        <source type="image/avif" srcset="/{src}_{$light ? 'light' : 'dark'}.avif">
+        <img alt={alt} src="/{src}_{$light ? 'light' : 'dark'}.png">
+    {:else}
+        <source type="image/avif" srcset="/{src}.avif">
+        <img alt={alt} src="/{src}.png">
+    {/if}
 </picture>
 
 <style>

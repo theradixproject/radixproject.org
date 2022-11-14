@@ -1,10 +1,12 @@
 <script>
+    import {light} from "../stores.js";
+
     let links = ["donate", "contact", "privacy", "terms"]
 </script>
 
 <footer>
     {#each links as link, i}
-        <a class="nav-link" href="/{link}">{link[0].toUpperCase() + link.slice(1)}</a>{#if i !== links.length - 1}<span class="spacer">|</span>{/if}
+        <a class="nav-link" class:light={$light} href="/{link}">{link[0].toUpperCase() + link.slice(1)}</a>{#if i !== links.length - 1}<span class="spacer">|</span>{/if}
     {/each}
     <p>&copy; The Radix Project 2022.</p>
 </footer>

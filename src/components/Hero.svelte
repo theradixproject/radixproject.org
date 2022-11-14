@@ -1,11 +1,12 @@
 <script>
     import Img from "./Img.svelte";
+    import {light} from "../stores.js";
 </script>
 
 <main>
     <div class="row">
         <div class="img">
-            <Img src="splash"/>
+            <Img themed src="splash"/>
         </div>
         <div class="col">
             <h1>The Radix Project</h1>
@@ -13,7 +14,7 @@
         </div>
     </div>
 
-    <a href="/apply" class="gradient-border">Apply for Hosting Now</a>
+    <a href="/apply" class="gradient-border" class:light={$light}>Apply for Hosting Now</a>
 </main>
 
 <style>
