@@ -10,7 +10,7 @@
         </div>
         <div class="col">
             <h1>The Radix Project</h1>
-            <p class="mono">Your one-stop shop for supercharging open source.</p>
+            <p class="mono sub">Your one-stop shop for supercharging open source.</p>
         </div>
     </div>
 
@@ -24,13 +24,6 @@
         align-items: center;
         margin-top: 35px;
         margin-bottom: 55px;
-    }
-
-    .row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
     }
 
     .col {
@@ -49,5 +42,9 @@
         font-weight: 700;
         margin: 0;
         text-align: left;
+    }
+
+    .sub {
+        text-align: center;
     }
 </style>

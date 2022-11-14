@@ -4,7 +4,7 @@
     let links = ["donate", "contact", "privacy", "terms"]
 </script>
 
-<footer>
+<footer class="mono">
     {#each links as link, i}
         <a class="nav-link" class:light={$light} href="/{link}">{link[0].toUpperCase() + link.slice(1)}</a>{#if i !== links.length - 1}<span class="spacer">|</span>{/if}
     {/each}

@@ -2,20 +2,18 @@
     import Img from "./Img.svelte";
 
     export let title;
+    export let logos = [];
 </script>
 
 <main>
     <h2 class="heading-title">{title}<span class="dot">.</span></h2>
 
     <div class="container">
-        <div class="feature">
-            <Img src="logos/aviator"/>
-        </div>
-        <div class="feature">
-            <Img src="logos/packetframe"/>
-        </div>
-        <div class="feature"></div>
-        <div class="feature"></div>
+        {#each logos as logo}
+            <div class="feature">
+                <Img src="logos/{logo}"/>
+            </div>
+        {/each}
     </div>
 </main>
 

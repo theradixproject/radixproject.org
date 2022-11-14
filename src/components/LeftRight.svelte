@@ -9,13 +9,13 @@
             <p class="mono">The Radix Project is committed to providing free-of-charge need-based hosting on request for your FLOSS/open source endeavors. You can apply for our base plan, or contact us for more powerful solutions.</p>
         </div>
         <div class="img">
-            <Img themed src="star_icon"/>
+            <Img themed src="icons/star_icon"/>
         </div>
     </div>
 
     <div class="right">
         <div class="img">
-            <Img themed src="globe_icon"/>
+            <Img themed src="icons/globe_icon"/>
         </div>
         <div>
             <h2 class="heading-title">Reliable infrastructure for a dedicated community<span class="dot">.</span></h2>
@@ -29,7 +29,7 @@
             <p class="mono">Volunteers are legally bound to never share confidential or sensitive information with third parties, so you can rest assured that your valuable project infrastructure is in trustworthy hands. Partners, sponsors, & information are treated with respect.</p>
         </div>
         <div class="img">
-            <Img themed src="lock_icon"/>
+            <Img themed src="icons/lock_icon"/>
         </div>
     </div>
 </main>

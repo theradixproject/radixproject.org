@@ -8,7 +8,7 @@
 <main>
     <Hero/>
     <LeftRight/>
-    <Feature title="Meet our sponsors"/>
-    <Feature title="And some of our partners"/>
+    <Feature title="Meet our sponsors" logos={["packetframe"]}/>
+    <Feature title="And some of our partners" logos={["aviator"]}/>
     <Contribute/>
 </main>

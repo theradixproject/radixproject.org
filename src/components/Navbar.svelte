@@ -19,5 +19,6 @@
 
     a {
         display: flex;
+        font-weight: 800 !important;
     }
 </style>
