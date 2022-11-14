@@ -98,3 +98,20 @@ button:focus:not(:focus-visible) {
     text-decoration: none;
     cursor: pointer;
 }
+
+.nav-link {
+    margin: 0;
+    height: 100%;
+    padding: 0 1rem;
+    color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.nav-link:hover {
+    color: gray;
+    text-decoration: none;
+}
