@@ -1,15 +1,17 @@
 <main>
     <div class="left">
         <div>
-        </div>
-        <div>
             <h2 class="heading-title">Your project is our priority<span class="dot">.</span></h2>
             <p class="mono">The Radix Project is committed to providing free-of-charge need-based hosting on request for your FLOSS/open source endeavors. You can apply for our base plan, or contact us for more powerful solutions.</p>
+        </div>
+        <div>
+            <img src="/radix_globe_icon_dark.png" alt="">
         </div>
     </div>
 
     <div class="right">
         <div>
+            <img src="/radix_globe_icon_dark.png" alt="">
         </div>
         <div>
             <h2 class="heading-title">Reliable infrastructure for a dedicated community<span class="dot">.</span></h2>
@@ -19,10 +21,11 @@
 
     <div class="left">
         <div>
-        </div>
-        <div>
             <h2 class="heading-title">Trust & safety first<span class="dot">.</span></h2>
             <p class="mono">Volunteers are legally bound to never share confidential or sensitive information with third parties, so you can rest assured that your valuable project infrastructure is in trustworthy hands. Partners, sponsors, & information are treated with respect.</p>
+        </div>
+        <div>
+            <img src="/radix_globe_icon_dark.png" alt="">
         </div>
     </div>
 </main>
@@ -38,7 +41,20 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-        padding: 0 20px;
-        margin: 20px 0;
+        margin: 50px 0;
+        justify-content: center;
+    }
+
+    img {
+        width: 170px;
+        height: auto;
+    }
+
+    .left img {
+        padding-left: 50px;
+    }
+
+    .right img {
+        padding-right: 50px;
     }
 </style>
