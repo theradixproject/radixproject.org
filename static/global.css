@@ -133,3 +133,7 @@ button:focus:not(:focus-visible) {
     color: gray;
     text-decoration: none;
 }
+
+.center {
+    text-align: center;
+}
