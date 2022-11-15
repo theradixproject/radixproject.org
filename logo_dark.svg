@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 1504 1504"
+   fill="none"
+   stroke="none"
+   stroke-linecap="square"
+   stroke-miterlimit="10"
+   id="svg28"
+   sodipodi:docname="radix_dark.svg"
+   inkscape:export-filename="radix_dark1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   width="1504"
+   height="1504"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs32" />
+  <sodipodi:namedview
+     id="namedview30"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.3313543"
+     inkscape:cx="763.53317"
+     inkscape:cy="618.67312"
+     inkscape:window-width="1503"
+     inkscape:window-height="933"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g26" />
+  <clipPath
+     id="g18bf9d2af8b_0_35.0">
+    <path
+       d="M 0,0 H 2256 V 1504 H 0 Z"
+       clip-rule="nonzero"
+       id="path2" />
+  </clipPath>
+  <g
+     clip-path="url(#g18bf9d2af8b_0_35.0)"
+     id="g26">
+    <path
+       fill="#ffffff"
+       d="m 0.38773,751.89916 v 0 C 0.38773,339.58701 336.98279,5.3420033 752.19386,5.3420033 q 375.90314,0 751.80614,0 0,373.2785267 0,746.5571567 v 0 c 0,412.31204 -336.595,746.55724 -751.80614,746.55724 v 0 C 336.9828,1498.4564 0.38773,1164.2112 0.38773,751.89916 Z"
+       fill-rule="evenodd"
+       id="path7"
+       style="stroke-width:1.69194" />
+    <path
+       fill="#000000"
+       d="m 165.7977,752.02399 v 0 c 0,-326.32974 262.43104,-590.87234 586.15625,-590.87234 v 0 c 155.4582,0 304.54945,62.25246 414.47495,173.0625 109.9257,110.81006 171.6812,261.10072 171.6812,417.80985 v 0 c 0,326.3297 -262.4309,590.8723 -586.15615,590.8723 v 0 c -323.72521,0 -586.15625,-264.5426 -586.15625,-590.87231 z"
+       fill-rule="evenodd"
+       id="path9"
+       style="stroke-width:1.69194" />
+    <defs
+       id="defs18">
+      <linearGradient
+         id="g18bf9d2af8b_0_35.1"
+         gradientUnits="userSpaceOnUse"
+         gradientTransform="matrix(27.845967,0,0,27.845967,-1156.311,-520.44627)"
+         spreadMethod="pad"
+         x1="55.025265"
+         y1="42.601688"
+         x2="55.025208"
+         y2="59.059731">
+        <stop
+           offset="0.0"
+           stop-color="#ffffff"
+           id="stop11" />
+        <stop
+           offset="0.5"
+           stop-color="#ffffff"
+           id="stop13" />
+        <stop
+           offset="1.0"
+           stop-color="#9900ff"
+           id="stop15" />
+      </linearGradient>
+    </defs>
+    <path
+       fill="url(#g18bf9d2af8b_0_35.1)"
+       d="m 375.9208,894.98481 v 0 c 0,-126.55283 104.39262,-229.14426 233.16752,-229.14426 v 0 c 61.83995,0 121.14691,24.14191 164.87434,67.11477 43.72743,42.97296 68.29318,101.2566 68.29318,162.02951 v 0 c 0,126.55287 -104.39269,229.14407 -233.16752,229.14407 v 0 c -128.77491,0 -233.16753,-102.5912 -233.16753,-229.14407 z"
+       fill-rule="evenodd"
+       id="path20"
+       style="fill:url(#g18bf9d2af8b_0_35.1);stroke-width:1.69194" />
+    <path
+       fill="#ffffff"
+       d="m 431.93738,704.29897 v 0 c 0,-199.77693 164.63517,-361.72809 367.72327,-361.72809 v 0 c 97.52611,0 191.0579,38.11055 260.01935,105.94767 68.9615,67.83721 107.7037,159.84415 107.7037,255.78041 v 0 c 0,199.77692 -164.6353,361.72804 -367.72305,361.72804 v 0 c -203.0881,0 -367.72327,-161.95112 -367.72327,-361.72803 z"
+       fill-rule="evenodd"
+       id="path22"
+       style="stroke-width:1.69194" />
+    <path
+       stroke="#000000"
+       stroke-width="40.6064"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="m 431.93738,704.29897 v 0 c 0,-199.77693 164.63517,-361.72809 367.72327,-361.72809 v 0 c 97.52611,0 191.0579,38.11055 260.01935,105.94767 68.9615,67.83721 107.7037,159.84415 107.7037,255.78041 v 0 c 0,199.77692 -164.6353,361.72804 -367.72305,361.72804 v 0 c -203.0881,0 -367.72327,-161.95112 -367.72327,-361.72803 z"
+       fill-rule="evenodd"
+       id="path24" />
+  </g>
+</svg>
