@@ -8,7 +8,11 @@
 <main>
     <Hero/>
     <LeftRight/>
-    <Feature title="Meet our sponsors" logos={["packetframe"]}/>
-    <Feature title="And some of our partners" logos={["aviator"]}/>
+    <Feature title="Meet our sponsors" logos={{
+        "packetframe": "https://packetframe.com",
+    }}/>
+    <Feature title="And some of our partners" logos={{
+        "aviator": "https://github.com/natesales/aviator",
+    }}/>
     <Contribute/>
 </main>

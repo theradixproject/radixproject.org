@@ -2,17 +2,17 @@
     import Img from "./Img.svelte";
 
     export let title;
-    export let logos = [];
+    export let logos = {};
 </script>
 
 <main>
     <h2 class="heading-title">{title}<span class="dot">.</span></h2>
 
     <div class="container">
-        {#each logos as logo}
-            <div class="feature">
+        {#each Object.keys(logos) as logo}
+            <a href={logos[logo]} class="feature">
                 <Img src="logos/{logo}"/>
-            </div>
+            </a>
         {/each}
     </div>
 </main>
@@ -42,7 +42,8 @@
         align-items: center;
     }
 
-    .feature {
+    a {
+        color: white;
         height: 100px;
         width: 100px;
     }
