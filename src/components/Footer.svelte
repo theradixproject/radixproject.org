@@ -1,7 +1,7 @@
 <script>
     import {light} from "../stores.js";
 
-    let links = ["donate", "contact", "privacy", "terms"]
+    let links = ["contribute", "contact", "privacy", "terms"]
 </script>
 
 <footer class="mono">

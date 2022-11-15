@@ -7,7 +7,7 @@
         The Radix Project is kept afloat by your contributions<span class="dot">.</span> We appreciate your donations immensely <span class="red">&lt;3</span>
     </h2>
 
-    <a href="/donate" class="gradient-border" class:light={$light}>Donate Now</a>
+    <a href="/contribute" class="gradient-border" class:light={$light}>Donate Now</a>
 </main>
 
 <style>
