@@ -31,7 +31,8 @@
 <style>
     main {
         min-height: 100vh;
-        margin: 0;
+        margin-left: 35px;
+        margin-right: 35px;
         color: white !important;
         background-color: black !important;
         display: flex;

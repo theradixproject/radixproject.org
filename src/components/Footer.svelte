@@ -5,9 +5,11 @@
 </script>
 
 <footer class="mono">
-    {#each links as link, i}
-        <a class="nav-link" class:light={$light} href="/{link}">{link[0].toUpperCase() + link.slice(1)}</a>{#if i !== links.length - 1}<span class="spacer">|</span>{/if}
-    {/each}
+    <div>
+        {#each links as link, i}
+            <a class="nav-link" class:light={$light} href="/{link}">{link[0].toUpperCase() + link.slice(1)}</a>{#if i !== links.length - 1}<span class="spacer">|</span>{/if}
+        {/each}
+    </div>
     <p>&copy; The Radix Project 2022.</p>
 </footer>
 
@@ -16,6 +18,10 @@
         text-align: center;
         margin: 25px;
         padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     a {

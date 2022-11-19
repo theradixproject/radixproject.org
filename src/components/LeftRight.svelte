@@ -49,6 +49,24 @@
         justify-content: center;
     }
 
+    @media screen and (max-width: 600px) {
+        .left, .right {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .left {
+            flex-direction: column-reverse;
+        }
+
+        .img {
+            padding: 0 0 35px 0 !important;
+        }
+    }
+
     .img {
         width: 170px;
         height: 170px;

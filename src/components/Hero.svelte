@@ -33,6 +33,16 @@
         margin-left: 25px;
     }
 
+    @media screen and (max-width: 600px) {
+        .col {
+            margin-left: 0;
+        }
+
+        h1 {
+            text-align: center !important;
+        }
+    }
+
     .img {
         width: 175px;
     }
