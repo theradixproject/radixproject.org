@@ -14,11 +14,17 @@
     main {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin: 25px;
     }
 
     a {
-        display: flex;
         font-weight: 800 !important;
+    }
+
+    @media screen and (max-width: 600px) {
+        a {
+            padding: 6px;
+        }
     }
 </style>
