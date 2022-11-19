@@ -1,11 +1,11 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-9c00231b.js",
+    "file": "_app/immutable/start-312e3209.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-a2d646c2.js",
-      "_singletons-7c24d16d.js"
+      "_singletons-152aaba2.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -21,7 +21,7 @@
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-708bbf1a.js",
+    "file": "_app/immutable/components/pages/_layout.svelte-2a0f84c5.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
@@ -29,20 +29,20 @@
       "_stores-890e2bdc.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-9fbb9125.css"
+      "_app/immutable/assets/_layout-849b258e.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-3074aee6.js",
+    "file": "_app/immutable/components/error.svelte-2c8596c4.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-a2d646c2.js",
-      "_singletons-7c24d16d.js"
+      "_singletons-152aaba2.js"
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-17462a1e.js",
+    "file": "_app/immutable/components/pages/_page.svelte-6c4ae251.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -51,7 +51,7 @@
       "_stores-890e2bdc.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-21a9ccfb.css"
+      "_app/immutable/assets/_page-75bee622.css"
     ]
   },
   "src/routes/about/+page.svelte": {
@@ -129,8 +129,8 @@
       "__layout-8d2a742b.js"
     ]
   },
-  "_singletons-7c24d16d.js": {
-    "file": "_app/immutable/chunks/singletons-7c24d16d.js",
+  "_singletons-152aaba2.js": {
+    "file": "_app/immutable/chunks/singletons-152aaba2.js",
     "imports": [
       "_index-f9c12873.js"
     ]
@@ -174,7 +174,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-20e5b6fb.js",
+    "file": "_app/immutable/chunks/0-fa5d4d04.js",
     "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
@@ -183,7 +183,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-2e52afce.js",
+    "file": "_app/immutable/chunks/1-38e50a98.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -191,7 +191,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-fca2a739.js",
+    "file": "_app/immutable/chunks/2-feff3c84.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -255,27 +255,27 @@
     ]
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-9fbb9125.css",
+    "file": "_app/immutable/assets/_layout-849b258e.css",
     "src": "src/routes/+layout.css"
-  },
-  "Img.css": {
-    "file": "_app/immutable/assets/Img-9957d2ea.css",
-    "src": "Img.css"
-  },
-  "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-21a9ccfb.css",
-    "src": "src/routes/+page.css"
   },
   "src/routes/about/+page.css": {
     "file": "_app/immutable/assets/_page-4cbe824f.css",
     "src": "src/routes/about/+page.css"
   },
-  "SimplePage.css": {
-    "file": "_app/immutable/assets/SimplePage-facda358.css",
-    "src": "SimplePage.css"
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-75bee622.css",
+    "src": "src/routes/+page.css"
+  },
+  "Img.css": {
+    "file": "_app/immutable/assets/Img-9957d2ea.css",
+    "src": "Img.css"
   },
   "src/routes/contact/+page.css": {
     "file": "_app/immutable/assets/_page-2aa34422.css",
     "src": "src/routes/contact/+page.css"
+  },
+  "SimplePage.css": {
+    "file": "_app/immutable/assets/SimplePage-facda358.css",
+    "src": "SimplePage.css"
   }
 }
