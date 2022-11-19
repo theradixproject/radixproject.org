@@ -32,10 +32,11 @@
     .contact {
         text-align: center;
         color: white;
+        margin-bottom: 0 !important;
     }
 
     .contact a {
         color: white;
-        text-decoration: none;
+        text-decoration: underline;
     }
 </style>
