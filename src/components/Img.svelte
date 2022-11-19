@@ -4,15 +4,24 @@
     export let src, alt
     export let themed = false
     export let round = false
+    export let svg = false
 </script>
 
 <picture>
     {#if themed}
-        <source type="image/avif" srcset="/{src}_{$light ? 'light' : 'dark'}.avif">
-        <img class:round alt={alt} src="/{src}_{$light ? 'light' : 'dark'}.png">
+        {#if svg}
+            <img class:round alt={alt} src="/{src}_{$light ? 'light' : 'dark'}.svg">
+        {:else}
+            <source type="image/avif" srcset="/{src}_{$light ? 'light' : 'dark'}.avif">
+            <img class:round alt={alt} src="/{src}_{$light ? 'light' : 'dark'}.png">
+        {/if}
     {:else}
-        <source type="image/avif" srcset="/{src}.avif">
-        <img class:round alt={alt} src="/{src}.png">
+        {#if svg}
+            <img class:round alt={alt} src="/{src}.svg">
+        {:else}
+            <source type="image/avif" srcset="/{src}.avif">
+            <img class:round alt={alt} src="/{src}.png">
+        {/if}
     {/if}
 </picture>
 
