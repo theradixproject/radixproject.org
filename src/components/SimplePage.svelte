@@ -1,10 +1,11 @@
 <script>
-import Img from "./Img.svelte";
+    import Img from "./Img.svelte";
+    export let img = "";
 </script>
 
 <main>
     <div class="img">
-        <Img themed src="logo"/>
+        <Img themed svg src={img === "" ? "logo" : img}/>
     </div>
 
     <h2 class="heading-title">
