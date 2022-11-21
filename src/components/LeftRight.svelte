@@ -26,7 +26,9 @@
     <div class="left">
         <div>
             <h2 class="heading-title">Trust & safety first<span class="dot">.</span></h2>
-            <p class="mono">Volunteers are legally bound to never share confidential or sensitive information with third parties, so you can rest assured that your valuable project infrastructure is in trustworthy hands. Partners, sponsors, & information are treated with respect.</p>
+            <p class="mono">
+                We will never share confidential or sensitive information with third parties, so you can rest assured that your valuable project infrastructure is in trustworthy hands. Partners, sponsors, & information are treated with respect. The infrastructure we provide is entirely powered by open-source software, so you can see what's going on under the hood at any time.
+            </p>
         </div>
         <div class="img">
             <Img svg themed src="icons/lock_icon"/>
