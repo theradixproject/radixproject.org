@@ -12,10 +12,3 @@
         <slot/>
     </div>
 </SimplePage>
-
-<style>
-    a {
-        color: white;
-        text-decoration: underline;
-    }
-</style>
