@@ -31,7 +31,6 @@
         height: inherit;
     }
 
-
     .round {
         width: 175px;
         height: 175px;

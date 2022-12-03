@@ -1,6 +1,4 @@
 <script>
-    import Img from "./Img.svelte";
-
     export let title;
     export let logos = {};
 </script>
@@ -9,9 +7,9 @@
     <h2 class="heading-title">{title}<span class="dot">.</span></h2>
 
     <div class="container">
-        {#each Object.keys(logos) as logo}
-            <a href={logos[logo]} class="feature">
-                <Img src="logos/{logo}"/>
+        {#each logos as logo}
+            <a href={logo.link} class="feature">
+                <img style="width: {logo.width}px; height={logo.height}px" src="logos/{logo.name}.png" alt={logo.name + " logo"}/>
             </a>
         {/each}
     </div>
@@ -39,13 +37,11 @@
         border: 3px solid black;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
     }
 
     a {
         color: white;
-        height: 100px;
-        width: 100px;
     }
 </style>
