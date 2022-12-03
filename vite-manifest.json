@@ -1,11 +1,11 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-08469792.js",
+    "file": "_app/immutable/start-84fda483.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-557b4ac4.js",
-      "_singletons-32c76b14.js"
+      "_singletons-1b47c20e.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -33,12 +33,12 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-4737cb72.js",
+    "file": "_app/immutable/components/error.svelte-2f16bbd6.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-557b4ac4.js",
-      "_singletons-32c76b14.js"
+      "_singletons-1b47c20e.js"
     ]
   },
   "src/routes/+page.svelte": {
@@ -130,8 +130,8 @@
       "__layout-8d2a742b.js"
     ]
   },
-  "_singletons-32c76b14.js": {
-    "file": "_app/immutable/chunks/singletons-32c76b14.js",
+  "_singletons-1b47c20e.js": {
+    "file": "_app/immutable/chunks/singletons-1b47c20e.js",
     "imports": [
       "_index-b9dc7195.js"
     ]
@@ -184,7 +184,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-28f3517c.js",
+    "file": "_app/immutable/chunks/1-fc083389.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -259,6 +259,14 @@
     "file": "_app/immutable/assets/_layout-ff3602ae.css",
     "src": "src/routes/+layout.css"
   },
+  "SimplePage.css": {
+    "file": "_app/immutable/assets/SimplePage-facda358.css",
+    "src": "SimplePage.css"
+  },
+  "src/routes/contact/+page.css": {
+    "file": "_app/immutable/assets/_page-2aa34422.css",
+    "src": "src/routes/contact/+page.css"
+  },
   "src/routes/+page.css": {
     "file": "_app/immutable/assets/_page-0c1c86df.css",
     "src": "src/routes/+page.css"
@@ -270,13 +278,5 @@
   "src/routes/about/+page.css": {
     "file": "_app/immutable/assets/_page-d1761b97.css",
     "src": "src/routes/about/+page.css"
-  },
-  "SimplePage.css": {
-    "file": "_app/immutable/assets/SimplePage-facda358.css",
-    "src": "SimplePage.css"
-  },
-  "src/routes/contact/+page.css": {
-    "file": "_app/immutable/assets/_page-2aa34422.css",
-    "src": "src/routes/contact/+page.css"
   }
 }
