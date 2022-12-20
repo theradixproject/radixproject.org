@@ -1,6 +1,7 @@
 <script>
     import SimplePage from "../../components/SimplePage.svelte";
-    import {pages} from "./mdp-meta.js";
+    // import {pages} from "./mdp-meta.js";
+    let pages = {"first-steps":{"id":"first-steps","link":"first-steps","title":"First Steps","date":"December 20, 2022"}};
 </script>
 
 <SimplePage>
