@@ -4,7 +4,7 @@
 
 <main>
     <a class:light={$light} class="nav-link" href="/">HOME</a>
-    <a class:light={$light} class="nav-link" href="/news">NEWS</a>
+    <a class:light={$light} class="nav-link" href="/blog">BLOG</a>
     <a class:light={$light} class="nav-link" href="/about">ABOUT</a>
     <a class:light={$light} class="nav-link" href="/apply">APPLY</a>
     <a class:light={$light} class="nav-link" href="/contribute">CONTRIBUTE</a>

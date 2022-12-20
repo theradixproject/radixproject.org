@@ -1,22 +1,21 @@
-import adapter from '@sveltejs/adapter-static';
-import preprocess from "svelte-preprocess";
-import {mdsvex} from "mdsvex";
+import { mdsvex } from "mdsvex";
+import adapter from "@sveltejs/adapter-static";
+import { fsindexer } from "./fsindexer.js";
 
 /** @type {import('@sveltejs/kit').Config} */
-const config = {
-	extensions: [".svelte", ".mdx"],
-	preprocess: [
-		mdsvex({
-			extensions: [".mdx"],
-			layout: {
-				simple: "./src/components/SimplePageWrapper.svelte",
-			},
-		}),
-		preprocess()
-	],
-	kit: {
-		adapter: adapter()
-	}
-};
+export default {
+  extensions: [".svelte", ".mdx"],
+  preprocess: [
+      fsindexer(),
+      mdsvex({
+          extensions: [".mdx"],
+          layout: {
+              blog: "./src/components/BlogLayout.svelte",
+          },
+      }),
+  ],
 
-export default config;
+  kit: {
+    adapter: adapter(),
+  },
+};
