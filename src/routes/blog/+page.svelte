@@ -1,6 +1,6 @@
 <script>
     import SimplePage from "../../components/SimplePage.svelte";
-    import {pages} from "../../mdp-meta.js";
+    import {pages} from "./mdp-meta.js";
 </script>
 
 <SimplePage>
@@ -31,10 +31,6 @@
 </SimplePage>
 
 <style>
-    hr {
-        color: #d9d9d9;
-    }
-
     h2 {
         color: var(--color-purple);
         font-size: 24px;

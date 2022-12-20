@@ -5,12 +5,10 @@
     export let date;
 </script>
 
-
 <SimplePage>
-    <div slot="title" class="center">
+    <div class="center" slot="title">
         {title}<span class="dot">.</span>
     </div>
-
 
     <div slot="content">
         <p class="center" style="margin-bottom: 0;">{date}</p>
@@ -27,6 +25,10 @@
         padding-top: 15px;
         margin: auto;
         max-width: 1000px;
+    }
+
+    .post :global(a) {
+        color: var(--color-purple) !important;
     }
 
     .post :global(pre) {
