@@ -2,8 +2,11 @@
     import SimplePage from "../../components/SimplePage.svelte";
 
     let submitted = false;
+    let submitLoading = false;
 
     const submitForm = (event) => {
+        submitLoading = true;
+
         const formData = new FormData(event.target);
 
         let data = {};
@@ -21,6 +24,7 @@
         })
             .then((data) => data.json())
             .then((data) => {
+                submitLoading = false;
                 if (data.error) {
                     alert(data.message);
                 } else {
@@ -54,24 +58,25 @@
                 <input placeholder="What is your role in your project?" type="text" name="Your Role"/>
 
                 <p>Project Summary</p>
-                <textarea placeholder="Please provide a short summary of your project" rows="2" name="Project Summary"/>
+                <textarea placeholder="Please provide a short summary of your project" rows="2"
+                          name="Project Summary"></textarea>
 
                 <p>Project Description</p>
                 <textarea placeholder="Please explain your project and why it's needed" rows="10"
-                          name="Project Description"/>
+                          name="Project Description"></textarea>
 
                 <p>Services</p>
                 <textarea placeholder="What services do you need from Radix and how will you use them?" rows="10"
-                          name="Services"/>
+                          name="Services"></textarea>
 
                 <p>Why Radix?</p>
                 <textarea placeholder="Please explain why Radix is good fit for your project" rows="6"
-                          name="Why Radix?"/>
+                          name="Why Radix?"></textarea>
 
                 <p>Adopters</p>
                 <textarea
                         placeholder="Please explain who is currently using your project. Add any links or testimonials of how your project benefits the open source community."
-                        rows="6" name="Adopters"/>
+                        rows="6" name="Adopters"></textarea>
 
                 <p>Source Code</p>
                 <input placeholder="Provide a link to your project's source code or VCS organization" type="text"
@@ -79,9 +84,13 @@
 
                 <p>Additional Information</p>
                 <textarea placeholder="Is there anything else you'd like to include in your application?" rows="8"
-                          name="Additional Information"/>
+                          name="Additional Information"></textarea>
 
-                <button type="submit">Submit</button>
+                {#if submitLoading}
+                    <button type="submit" disabled>Submitting...</button>
+                {:else}
+                    <button type="submit">Submit</button>
+                {/if}
             </form>
         {/if}
     </div>
