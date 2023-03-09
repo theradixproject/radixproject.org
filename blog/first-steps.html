@@ -11,21 +11,22 @@
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 		<meta name="description" content="The Radix Project provides free-of-charge, accessible, tailored hosting for open source projects">
 		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout-ff3602ae.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/_page-0aad03a8.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/SimplePage-facda358.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/Img-57b8883a.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-76535d4c.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-4c2ef552.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-a7c44a13.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-2f22e48b.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-b1e82dff.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores-07c06e62.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-8d2a742b.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/first-steps/_page.mdx-75711f2a.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/SimplePage-41672993.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/Img-047b0c45.js"><!-- HEAD_svelte-1k6j40g_START --><style lang="scss">body {
+		<link href="../_app/immutable/assets/_layout.ff3602ae.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page.0aad03a8.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/SimplePage.facda358.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Img.57b8883a.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.7e161b7d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.47f1d223.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.f2a9aafb.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.bb7434ec.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.5a825937.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.e297f55b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.4f965cc2.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.984db11e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/blog-first-steps-page.mdx.22951909.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/SimplePage.1753dbe4.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Img.352d3dca.js"><!-- HEAD_svelte-1k6j40g_START --><style lang="scss">body {
                 color: white !important;
                 background-color: black !important;
             }
@@ -73,25 +74,30 @@ CEO of the Radix Project</p></div></div>
 </main>
 
 
-		<script type="module" data-sveltekit-hydrate="c12v4">
-			import { start } from "../_app/immutable/start-76535d4c.js";
+			
+			<script>
+				{
+					__sveltekit_stcm6r = {
+						env: {},
+						base: new URL("..", location).pathname.slice(0, -1),
+						element: document.currentScript.parentElement
+					};
 
-			start({
-				env: {},
-				hydrate: {
-					status: 200,
-					error: null,
-					node_ids: [0, 6],
-					params: {},
-					route: {"id":"/blog/first-steps"},
-					data: [null,null],
-					form: null
-				},
-				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="c12v4"]').parentNode,
-				trailing_slash: "never"
-			});
-		</script>
-	</div>
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.7e161b7d.js"),
+						import("../_app/immutable/entry/app.5a825937.js")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_stcm6r.element, {
+							node_ids: [0, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
 	</body>
 </html>
