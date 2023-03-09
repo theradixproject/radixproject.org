@@ -15,22 +15,22 @@
             data[key] = value;
         }
 
-        fetch("https://api.radixproject.org/form?name=Waitlist", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-        })
-            .then((data) => data.json())
-            .then((data) => {
-                submitLoading = false;
-                if (data.error) {
-                    alert(data.message);
-                } else {
-                    submitted = true;
-                }
-            });
+        // fetch("https://api.radixproject.org/form?name=Waitlist", {
+        //     method: "POST",
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //     },
+        //     body: JSON.stringify(data),
+        // })
+        //     .then((data) => data.json())
+        //     .then((data) => {
+        //         submitLoading = false;
+        //         if (data.error) {
+        //             alert(data.message);
+        //         } else {
+        //             submitted = true;
+        //         }
+        //     });
     };
 </script>
 
@@ -49,41 +49,44 @@
         {#if !submitted}
             <form on:submit|preventDefault={submitForm}>
                 <p>Email</p>
-                <input type="email" name="Email"/>
+                <input required type="email" name="Email"/>
 
                 <p>Project Name</p>
-                <input type="text" name="Project Name"/>
+                <input required type="text" name="Project Name"/>
 
                 <p>Your Role</p>
-                <input placeholder="What is your role in your project?" type="text" name="Your Role"/>
+                <input required placeholder="What is your role in your project?" type="text" name="Your Role"/>
 
                 <p>Project Summary</p>
-                <textarea placeholder="Please provide a short summary of your project" rows="2"
+                <textarea required placeholder="Please provide a short summary of your project" rows="2"
                           name="Project Summary"></textarea>
 
                 <p>Project Description</p>
-                <textarea placeholder="Please explain your project and why it's needed" rows="10"
+                <textarea required placeholder="Please explain your project and why it's needed" rows="10"
                           name="Project Description"></textarea>
 
                 <p>Services</p>
-                <textarea placeholder="What services do you need from Radix and how will you use them?" rows="10"
+                <textarea required placeholder="What services do you need from Radix and how will you use them?"
+                          rows="10"
                           name="Services"></textarea>
 
                 <p>Why Radix?</p>
-                <textarea placeholder="Please explain why Radix is good fit for your project" rows="6"
+                <textarea required placeholder="Please explain why Radix is good fit for your project" rows="6"
                           name="Why Radix?"></textarea>
 
                 <p>Adopters</p>
-                <textarea
-                        placeholder="Please explain who is currently using your project. Add any links or testimonials of how your project benefits the open source community."
-                        rows="6" name="Adopters"></textarea>
+                <textarea required
+                          placeholder="Please explain who is currently using your project. Add any links or testimonials of how your project benefits the open source community."
+                          rows="6" name="Adopters"></textarea>
 
                 <p>Source Code</p>
-                <input placeholder="Provide a link to your project's source code or VCS organization" type="text"
+                <input required placeholder="Provide a link to your project's source code or VCS organization"
+                       type="text"
                        name="Source Code"/>
 
                 <p>Additional Information</p>
-                <textarea placeholder="Is there anything else you'd like to include in your application?" rows="8"
+                <textarea required placeholder="Is there anything else you'd like to include in your application?"
+                          rows="8"
                           name="Additional Information"></textarea>
 
                 {#if submitLoading}
@@ -93,7 +96,7 @@
                 {/if}
 
                 <br>
-                <p class"mono">Looking to volunteer? We want to hear from you! Contact link below.</p>
+                <p class="mono">Looking to volunteer? We want to hear from you! Contact link below.</p>
             </form>
         {/if}
     </div>
