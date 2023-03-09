@@ -15,22 +15,22 @@
             data[key] = value;
         }
 
-        // fetch("https://api.radixproject.org/form?name=Waitlist", {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        //     body: JSON.stringify(data),
-        // })
-        //     .then((data) => data.json())
-        //     .then((data) => {
-        //         submitLoading = false;
-        //         if (data.error) {
-        //             alert(data.message);
-        //         } else {
-        //             submitted = true;
-        //         }
-        //     });
+        fetch("https://api.radixproject.org/form?name=Waitlist", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+            .then((data) => data.json())
+            .then((data) => {
+                submitLoading = false;
+                if (data.error) {
+                    alert(data.message);
+                } else {
+                    submitted = true;
+                }
+            });
     };
 </script>
 
