@@ -33,7 +33,7 @@
             <a class="nav-link" class:light={$light} href="/{link}">{link[0].toUpperCase() + link.slice(1)}</a>{#if i !== links.length - 1}<span class="spacer">|</span>{/if}
         {/each}
     </div>
-    <p>&copy; The Radix Project 2022.</p>
+    <p>&copy; 2023 The Radix Project Inc.</p>
 </footer>
 
 <style>
