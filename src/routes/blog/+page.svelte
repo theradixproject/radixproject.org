@@ -1,6 +1,5 @@
 <script>
     import SimplePage from "../../components/SimplePage.svelte";
-    import {light} from "../../stores";
     // import {pages} from "./mdp-meta.js";
     let pages = {"first-steps":{"id":"first-steps","link":"first-steps","title":"First Steps","date":"December 20, 2022"}};
 </script>
@@ -23,7 +22,7 @@
             }
         }) as page}
             {#if !page.hidden}
-                <div class="post" class:light={$light}>
+                <div class="post">
                     <a href="/blog/{page.link}"><h2>{page.title}</h2></a>
                     <span>{page.date}</span>
                 </div>
@@ -48,8 +47,10 @@
         border-bottom: 1px white solid;
     }
 
-    .light {
-        border-top: 1px black solid;
-        border-bottom: 1px black solid;
+    @media (prefers-color-scheme: light) {
+        .post {
+            border-top: 1px black solid;
+            border-bottom: 1px black solid;
+        }
     }
 </style>

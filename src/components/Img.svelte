@@ -1,19 +1,29 @@
 <script>
-    import {light} from "../stores.js";
+    import {onMount} from "svelte";
 
     export let src, alt
     export let themed = false
     export let round = false
     export let svg = false
+
+    // Get preferred color scheme
+    let light = true;
+    onMount(() => {
+        light = !window.matchMedia('(prefers-color-scheme: dark)').matches
+    })
 </script>
 
 <picture>
     {#if themed}
         {#if svg}
-            <img class:round alt={alt} src="/{src}_{$light ? 'light' : 'dark'}.svg">
+            <source srcset="/{src}_dark.svg" media="(prefers-color-scheme: dark)">
+            <img {alt} class:round src="/{src}_light.svg">
+<!--            <img class:round alt={alt} src="/{src}_{light ? 'light' : 'dark'}.svg">-->
         {:else}
-            <source type="image/avif" srcset="/{src}_{$light ? 'light' : 'dark'}.avif">
-            <img class:round alt={alt} src="/{src}_{$light ? 'light' : 'dark'}.png">
+            <source srcset="/{src}_dark.avif" media="(prefers-color-scheme: dark)">
+            <img {alt} class:round src="/{src}_light.avif">
+<!--            <source type="image/avif" srcset="/{src}_{light ? 'light' : 'dark'}.avif">-->
+<!--            <img class:round alt={alt} src="/{src}_{light ? 'light' : 'dark'}.png">-->
         {/if}
     {:else}
         {#if svg}

@@ -1,6 +1,4 @@
 <script>
-    import {light} from "../stores";
-
     export let title;
     export let logos = {};
 </script>
@@ -8,7 +6,7 @@
 <main>
     <h2 class="heading-title">{title}<span class="dot">.</span></h2>
 
-    <div class="container" class:light={$light}>
+    <div class="container">
         {#each logos as logo}
             <a href={logo.link} class="feature">
                 <img style="width: {logo.width}px; height={logo.height}px" src="logos/{logo.name}.png" alt={logo.name + " logo"}/>
@@ -44,8 +42,10 @@
         align-items: center;
     }
 
-    .light {
-        border-radius: 0 !important;
+    @media (prefers-color-scheme: light) {
+        .container {
+            border-radius: 0 !important;
+        }
     }
 
     a {

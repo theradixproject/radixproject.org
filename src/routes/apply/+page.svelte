@@ -1,6 +1,5 @@
 <script>
     import SimplePage from "../../components/SimplePage.svelte";
-    import {light} from "../../stores";
 
     let submitted = false;
     let submitLoading = false;
@@ -48,7 +47,7 @@
 
     <div class="container" slot="content">
         {#if !submitted}
-            <form on:submit|preventDefault={submitForm} class:light={$light}>
+            <form on:submit|preventDefault={submitForm}>
                 <p>Email</p>
                 <input required type="email" name="Email"/>
 
@@ -131,11 +130,13 @@
         font-family: "Inter", sans-serif;
     }
 
-    .light input,
-    .light textarea,
-    .light button {
-        color: black !important;
-        background-color: white !important;
+    @media (prefers-color-scheme: light) {
+        input,
+        textarea,
+        button {
+            color: black !important;
+            background-color: white !important;
+        }
     }
 
     p {

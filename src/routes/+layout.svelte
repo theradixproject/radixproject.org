@@ -1,28 +1,9 @@
 <script>
     import Navbar from "../components/Navbar.svelte";
     import Footer from "../components/Footer.svelte";
-    import {light} from "../stores.js";
 </script>
 
-<svelte:head>
-    {#if $light}
-        <style lang="scss">
-            body {
-                color: black;
-                background-color: white !important;
-            }
-        </style>
-    {:else}
-        <style lang="scss">
-            body {
-                color: white !important;
-                background-color: black !important;
-            }
-        </style>
-    {/if}
-</svelte:head>
-
-<main class:light={$light}>
+<main>
     <Navbar/>
     <slot></slot>
     <Footer/>
@@ -39,8 +20,10 @@
         flex-direction: column;
     }
 
-    main.light {
-        color: black !important;
-        background-color: white !important;
+    @media (prefers-color-scheme: light) {
+        main {
+            color: black !important;
+            background-color: white !important;
+        }
     }
 </style>
